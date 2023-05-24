@@ -1,5 +1,6 @@
 list = [87,32,21,54,99,1,4,73,12]
 n = len(list)
+print("The list: ",end="")
 print(list)
 for i in range(n):
   minpos=i
@@ -7,4 +8,5 @@ for i in range(n):
     if list[j]<list[minpos]:
       minpos=j
   list[i],list[minpos] = list[minpos],list[i]
+print ("Shotted list:",end=" ")
 print(list)
